@@ -1,0 +1,89 @@
+<!--header-->
+{dede:include filename="header.htm"/}
+	
+    <section class="container">
+    	<a href="#mmenu" class="phone-nav glyphicon glyphicon-list"></a>
+    </section> 
+			
+	<!--banner-->
+	<section class="banner nybanner">
+	   <img src="/templets/default/images/contact-banner.jpg" alt="">
+	</section>
+	
+
+
+
+	<!--移动端  Mmenu-->
+	{dede:include filename="mui_nav.htm"/}
+		
+</div>	
+
+<!--内页内容区域-->
+<div class="container ny-wrap">
+	<div class="pro-title clearfix">
+		<span class="pull-left">联系我们</span>
+	</div>
+	<div class="container message">
+		<div class="messageh">
+			<h2>There is doubt through the below <br/>message to consult us! </h2>
+			<span>有疑问就通过下方留言来咨询我们吧！</span>
+		</div>
+		<div class="message-con clearfix">
+			<div class="mcon-left pic pull-left"><img src="/templets/default/images/message.png" class="vcenter" alt="" /></div>
+			<div class="mcon-right pull-right">
+				{dede:field.content/}
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<!--花之物语-->
+	<!--{dede:include filename="footer_news.html"/}-->
+	
+	
+</div>
+
+
+
+<!--底部导航-->
+{dede:include filename="fotter.htm"/}
+
+
+
+
+
+<!--Include Js-->
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!--移动端导航-->
+<script src="/templets/default/js/jquery.mmenu.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/templets/default/js/public.js" type="text/javascript" charset="utf-8"></script>
+<!--slick-->
+<script src="/templets/default/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!--placeholder-->
+<script src="/templets/default/js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){ $('input, textarea').placeholder(); });
+</script>
+
+
+<!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+<script>
+    var navList = document.getElementById("menu").getElementsByTagName("li");
+    for(var i=0; i<navList.length; i++){
+        var navListA = navList[i].children;
+        for(var j=0; j<navListA.length; j++){
+            if(navListA[j].innerHTML === "联系我们"){
+                navListA[j].style.background = "#d0883e";
+                navListA[j].style.color = "#fff";
+            }
+        }
+    }
+</script>
+</body>
+</html>

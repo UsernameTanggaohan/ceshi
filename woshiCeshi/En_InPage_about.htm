@@ -1,0 +1,62 @@
+{dede:include filename="En_header.htm"/}
+
+
+<section class="container">
+    <a href="#mmenu" class="phone-nav glyphicon glyphicon-list"></a>
+</section>
+
+<!--banner-->
+<section class="banner nybanner">
+    <img src="/templets/default/images/case-banner.jpg" alt="">
+</section>
+
+
+<!--移动端  Mmenu-->
+{dede:include filename="En_mui_nav.htm"/}
+
+</div>
+
+<!--内页内容区域-->
+<div class="container ny-wrap">
+    <div class="pro-title clearfix">
+        <span class="pull-left">About&nbsp;Us</span>
+        <p class="pull-right">
+            {dede:channel typeid='22' }
+            <a href="[field:typeurl/]">[field:typename/]</a>
+            {/dede:channel}
+        </p>
+    </div>
+    <div class="container brand">
+        <div class="brand-con">
+            {dede:field.content/}
+        </div>
+    </div>
+    <!--花之物语-->
+    <!--{dede:include filename="En_footer_news.html"/}-->
+</div>
+
+
+<!--底部导航-->
+{dede:include filename="En_fotter.htm"/}
+
+
+<!--Include Js-->
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!--移动端导航-->
+<script src="/templets/default/js/jquery.mmenu.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/templets/default/js/public.js" type="text/javascript" charset="utf-8"></script>
+<!--slick-->
+<script src="/templets/default/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!--placeholder-->
+<script src="/templets/default/js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function () {
+        $('input, textarea').placeholder();
+    });
+</script>
+
+</body>
+</html>

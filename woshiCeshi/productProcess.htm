@@ -1,0 +1,147 @@
+{dede:include filename="header.htm"/}
+
+<section class="container">
+    <a href="#mmenu" class="phone-nav glyphicon glyphicon-list"></a>
+</section>
+
+<!--banner-->
+<section class="banner nybanner">
+    <img src="/templets/default/images/case-banner.jpg" alt="">
+</section>
+
+
+<!--移动端  Mmenu-->
+{dede:include filename="mui_nav.htm"/}
+
+</div>
+
+<!--内页内容区域-->
+<div class="container ny-wrap">
+    <div class="pro-title clearfix">
+        <span class="pull-left">产品工艺</span>
+        <!--<p class="pull-right">-->
+            <!--{dede:channel typeid='20'}-->
+            <!--<a href="[field:typeurl/]">[field:typename/]</a>-->
+            <!--{/dede:channel}-->
+            <!--&lt;!&ndash;<a href="#">企业文化</a><em>|</em>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a class="active" href="honor.html">荣誉资质</a>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;{dede:channel typeid='20' type='son' currentstyle="<span class='navBackgroundColor'><a href='~typelink~'>~typename~</a> </span>"}&ndash;&gt;-->
+                <!--&lt;!&ndash;<span><a href='[field:typelink/]' target="_blank">[field:typename/]</a> <span/>&ndash;&gt;-->
+            <!--&lt;!&ndash;{/dede:channel}&ndash;&gt;-->
+
+        <!--</p>-->
+    </div>
+    <div class="container brand">
+        <div class="brand-con">
+            {dede:field.content/}
+        </div>
+    </div>
+
+    <div class="container brand">
+        <div class="pro-title clearfix">
+            <span class="pull-left">视频讲解-工艺流程</span>
+        </div>
+    </div>
+    <div class="container brand" style="text-align: center">
+        <div style="height:30px;"></div>
+        <video src="http://pkde6s278.bkt.clouddn.com/zhenrongVideo.mp4" controls="controls" width="70%" height="70%" autoplay="autoplay" style="display:inline-block;">
+            您的浏览器不支持 video 标签。
+        </video>
+    </div>
+    <!--<div class="container flower">-->
+        <!--<div class="flower-wrap">-->
+            <!--<div class="flower-title">-->
+                <!--<img src="/templets/default/images/flowerline.jpg" alt=""/>-->
+                <!--<span>合作伙伴 <em>PARTNER</em></span>-->
+                <!--<img src="/templets/default/images/flowerline.jpg" alt=""/>-->
+            <!--</div>-->
+            <!--<div class="flower-con">-->
+                <!--<div class="tenKh active">-->
+                    <!--<div class="swiper-container swiper-container-horizontal">-->
+                        <!--<div class="swiper-wrapper">-->
+                            <!--<div class="swiper-slide swiper-slide-next" style="width: 1201px;">-->
+                                <!--{dede:arclist typeid='36' row='8' limit='0,8'}-->
+                                <!--<a href="javascript:;"><img src="[field:litpic/]" alt=""></a>-->
+                                <!--{/dede:arclist}-->
+                            <!--</div>-->
+                            <!--<div class="swiper-slide swiper-slide-next" style="width: 1201px;">-->
+                                <!--{dede:arclist typeid='36' row='8' limit='8,8'}-->
+                                <!--<a href="javascript:;"><img src="[field:litpic/]" alt=""></a>-->
+                                <!--{/dede:arclist}-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; Add Pagination &ndash;&gt;-->
+                    <!--<div class="swiper-pagination swiper-pagination-fraction"><span class="swiper-pagination-current">1</span> / <span-->
+                            <!--class="swiper-pagination-total">5</span></div>-->
+                    <!--&lt;!&ndash; Add Arrows &ndash;&gt;-->
+                    <!--<div class="swiper-button-prev swiper-button-disabled"><i class="iconfont icon-zuoyou1"></i></div>-->
+                    <!--<div class="swiper-button-next"><i class="iconfont icon-zuoyou"></i></div>-->
+                    <!--<script>-->
+                      <!--var mySwiper = new Swiper('.tenKh .swiper-container', {-->
+                        <!--direction: 'horizontal',-->
+                        <!--//	    loop: true,-->
+                        <!--//	    autoplay: 5000,-->
+                        <!--speed: 800,-->
+                        <!--paginationClickable: true,-->
+                        <!--slidesPerView: '1',-->
+                        <!--nextButton: '.tenKh .swiper-button-next',-->
+                        <!--prevButton: '.tenKh .swiper-button-prev',-->
+                        <!--pagination: '.tenKh .swiper-pagination',-->
+                        <!--paginationType: 'fraction',-->
+                        <!--autoplayDisableOnInteraction: false,-->
+                      <!--});-->
+
+                      <!--// console.log($(window).width())-->
+
+                      <!--window.onload = function () {-->
+                        <!--window.onresize = function adjust() {-->
+                          <!--// console.log($(window).width())-->
+                          <!--if ($(window).width() < 768) {-->
+                            <!--var mySwiper = new Swiper('.tenKh .swiper-container', {-->
+                              <!--slidesPerView: '0.5',-->
+                            <!--});-->
+                          <!--} else {-->
+                            <!--var mySwiper = new Swiper('.tenKh .swiper-container', {-->
+                              <!--slidesPerView: '1',-->
+                            <!--});-->
+                          <!--}-->
+                        <!--};-->
+                      <!--}-->
+
+                    <!--</script>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--花之物语-->
+    <!--{dede:include filename="footer_news.html"/}-->
+</div>
+
+
+<!--底部导航-->
+{dede:include filename="fotter.htm"/}
+
+
+<!--Include Js-->
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!--移动端导航-->
+<script src="/templets/default/js/jquery.mmenu.all.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/templets/default/js/public.js" type="text/javascript" charset="utf-8"></script>
+<!--slick-->
+<script src="/templets/default/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!--placeholder-->
+<script src="/templets/default/js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function () {
+        $('input, textarea').placeholder();
+    });
+</script>
+
+</body>
+</html>
